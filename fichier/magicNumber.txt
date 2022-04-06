@@ -1,0 +1,33 @@
+
+*****************************************************************************************************************************
+
+La methode du nombre magique determine sans passage au binaire l'adresse reseau et l'adresse broadcast
+
+Voici comment fonctionne cette methode : prenons l'exemple de 192.168.0.1/11
+
+On a vue precedement que /11 signie 11bits a valeur de 1 suivie de 21 0 
+
+          11111111.11100000.00000000.0000000 ou encore 255.224.0.0
+
+on prend le dernier octect significatif c'est-a-dire 224 
+
+Puis on fait l'operation 256 - 224 = 32 qui est le nombre magique
+
+on ecrit tout les multiple de 32 jusqu'a 256 
+
+          0,32,64,96,128,160,192,224,256
+
+le dernier octect significatif de l'adresse masque est le second octect, 
+on prend le second octet de l'adresse IP ici on a 168
+
+La première adresse du réseau sera donc le multiple du nombre magique, strictement inférieur à 168
+ici on a 160 puis on met a 0 les octets restant
+
+        l'adresse reseau est donc 192.160.0.0
+
+La dernière adresse du réseau sera le multiple suivant, moins 1
+Ici on a 192 moins 1 191 puis on met 255 les octets restants
+
+        l'adresse reseau est donc 192.191.255.255
+
+**************************************************************************************************************************

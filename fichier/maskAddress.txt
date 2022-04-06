@@ -1,0 +1,26 @@
+***************************************************************************************************************
+
+
+Le masque d'un adresse permet de distinguer les deux partie d'un adresse IP.
+Voici un exemple d'adresse masque 255.255.255.0  en binaire 11111111.11111111.11111111.00000000
+
+Associe a un adresse IP on a par exemple : 192.168.0.1 / 255.255.255.0
+Pour determiner l'adresse reseau on applique la formule suivant
+Adresse reseau = adresse IP ET adresse masque
+
+  11000000.10101000.00000000.00000001 = 192.168.0.1  
+  11111111.11111111.11111111.00000000 = 255.255.255.0
+  -----------------------------------
+  11000000.10101000.00000000.00000000 = 192.168.0.0
+  
+  L'adresse reseau est donc 192.168.0.0
+  
+  Le nombre d'hote = 2^(nombre de 0 dans l'ID d'hote) - 2
+  
+  Dans notre cas on a nombre d'hote = 2^8 - 2 = 254
+  
+  Ici on a enleve deux adresse pour l'adresse reseau et pour l'adresse broadcast
+  
+  L'adresse broadcast est derniere adresse d'hote ici on a 192.168.0.255
+  
+  ***************************************************************************************************************

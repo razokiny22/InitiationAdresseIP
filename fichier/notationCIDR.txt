@@ -1,0 +1,9 @@
+*****************************************************************************************************************************************
+
+Une forme plus courte d'addresse masque est connue sous le nom de « notation CIDR » (Classless Inter-Domain Routing). Elle donne le numero du reseau suivi 
+par une barre oblique (ou slash, « / ») et le nombre de bits à 1 dans la notation binaire du masque de sous-reseau.
+
+Par exemple : Le masque  255.255.224.0 equivaut 11111111.11111111.11100000.00000000 sera donc représenté par /19 (19 bits à la valeur 1, 
+suivis de 13 bits 0).
+
+*******************************************************************************************************************************************

@@ -1,0 +1,13 @@
+*******************************************************************************************************************************************
+                                                                                                                                           
+L'adresse IP (Internet Protocol) designe un numero unique attribue de maniere provisoire ou durable a un ordinateur connecte a un reseau   informatique qui utilise l'internet protocole.                                                                                            
+                                                                                                                                          
+L'adresse IP des particuliers se présente sous la forme d'une serie de 4octects separer par des points, comme 192.134.8.24.               
+                                                                                                                                          
+Une adresse IP comporte deux parties :                                                                                                    
+                        a- La premiere partie d’une adresse IP est utilisée comme adresse réseau                                          
+                        b- La deuxieme partie partie comme adresse hote                                                                    
+                                                                                                                                              
+L'adresse masque nous permet de distinguer ces deux parties                                                                               
+                                                                                                                                          
+*******************************************************************************************************************************************
